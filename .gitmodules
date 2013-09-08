@@ -1,0 +1,3 @@
+[submodule "plugins/prism/prism-hacktionary"]
+	path = plugins/prism/prism-hacktionary
+	url = git@github.com:DecodedCo/prism-hacktionary.js.git
