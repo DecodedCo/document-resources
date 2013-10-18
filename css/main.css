@@ -77,13 +77,18 @@ body {
 
 .tag-form-list {
   position: fixed;
-  top: 50px;
+  top: 60px;
   z-index: 10000;
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 4px;
+  border: 1px solid rgb(221, 221, 221);
 }
 
 .tag-form-list .list-group-item {
   transition: all 0.2s ease;
   cursor: pointer;
+  border: none;
 }
 
 .tag-form-list .list-group-item.active, .tag-form-list .list-group-item:hover {

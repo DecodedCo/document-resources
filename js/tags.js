@@ -88,7 +88,7 @@ $(function() {
 
   function showList() {
     var bbox = inputGroup[0].getBoundingClientRect();
-    list.width(bbox.width);
+    list.width(bbox.width - 2);
     list.css({'display': 'block', 'left': bbox.left});
     filterList(input.val());
   }
@@ -143,7 +143,7 @@ $(function() {
         input.focus();
         setTimeout(function() {
           tagForm.trigger('submit');
-          showList();
+          input.one('keypress', function() {showList();});
         }, 1);
       } else {
         input.blur();
