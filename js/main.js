@@ -42,7 +42,7 @@ $(function() {
 
   $(".line-link").on("mouseover click", function(e) {
     e.preventDefault();
-    
+
     var href = $(this).attr("href").split(":"),
       pre, lines;
 
