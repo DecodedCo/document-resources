@@ -100,6 +100,20 @@ body {
   float: none;
   margin-left: -0.3em;
   vertical-align: top;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #resources .product {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .tag-form {
+    clear: both;
+  }
 }
 
 .product cite {
