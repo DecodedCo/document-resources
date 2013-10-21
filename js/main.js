@@ -30,15 +30,15 @@ $(function() {
       }
 
       // Add IDs so we can link to specific lines:
-      $pre.attr("id", "ex-" + n + "-" + type)
+      $pre.attr("id", "ex-" + n + "-" + type);
 
       if (j === 0) {
-        if (n !== "none") {
+        if (n !== "none" && n !== undefined) {
           $pre.before($button);
         }
       }
     });
-  })
+  });
 
   $(".line-link").on("mouseover click", function(e) {
     e.preventDefault();
@@ -51,10 +51,10 @@ $(function() {
       lines = href[1];
 
       // remove old highlights:
-      $(".temporary.line-highlight").remove()
+      $(".temporary.line-highlight").remove();
 
       // Add new ones:
-      Prism.highlightLines(pre[0], lines, "temporary ")
+      Prism.highlightLines(pre[0], lines, "temporary ");
     }
   });
 });

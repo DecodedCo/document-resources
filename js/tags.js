@@ -89,7 +89,7 @@ $(function() {
   function showList() {
     var bbox = inputGroup[0].getBoundingClientRect();
     list.width(bbox.width - 2);
-    list.css({'display': 'block', 'left': bbox.left});
+    list.css({'display': 'block', 'left': bbox.left, 'top': bbox.bottom + 10});
     filterList(input.val());
   }
 
