@@ -76,9 +76,9 @@ body {
 }
 
 .tag-form-list {
-  position: fixed;
+  position: absolute;
   top: 60px;
-  z-index: 10000;
+  z-index: 1000;
   max-height: 400px;
   overflow: auto;
   border-radius: 4px;

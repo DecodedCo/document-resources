@@ -87,9 +87,9 @@ $(function() {
   }
 
   function showList() {
-    var bbox = inputGroup[0].getBoundingClientRect();
-    list.width(bbox.width - 2);
-    list.css({'display': 'block', 'left': bbox.left, 'top': bbox.bottom + 10});
+    var offset = inputGroup.offset();
+    list.width(inputGroup.width() - 2);
+    list.css({'display': 'block', 'left': offset.left, 'top': offset.top + inputGroup.height() + 10});
     filterList(input.val());
   }
 
