@@ -75,75 +75,6 @@ body {
   vertical-align: -1px;
 }
 
-.tag-form-list {
-  position: absolute;
-  top: 60px;
-  z-index: 1000;
-  max-height: 400px;
-  overflow: auto;
-  border-radius: 4px;
-  border: 1px solid rgb(221, 221, 221);
-}
-
-.tag-form-list .list-group-item {
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border: none;
-}
-
-.tag-form-list .list-group-item.active, .tag-form-list .list-group-item:hover {
-  background-color: #FEF800;
-}
-
-.tag-form > * {
-  float: left;
-  margin-right: 0.3em;
-}
-
-.tag-form > :first-child {
-  margin-left: 60px;
-}
-
-#resources {
-  clear: both;
-}
-
-#resources .product {
-  display: inline-block;
-  float: none;
-  margin-left: -0.3em;
-  vertical-align: top;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 768px) {
-  #resources .product {
-    max-width: 400px;
-    display: block;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-
-  .tag-form {
-    clear: both;
-  }
-}
-
-.product cite {
-  font-style: italic;
-  text-align: center;
-  margin: auto;
-  display: block;
-}
-
-.product .desc {
-  text-align: justify;
-}
-
-.tag-form .input-group {
-  max-width: 300px;
-}
-
 .alert-info {
   background-color: rgba(254, 248, 0, 0.4);
   border-color: #E6E000;
@@ -195,30 +126,6 @@ body {
   margin-top: -30px;
 }
 
-a.product, .product a.desc {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a.product:hover h3, a.product:hover h4, .product a.desc:hover h3, .product a.desc:hover h4 {
-  text-decoration: underline;
-}
-
-.product img {
-  display: block;
-  margin: 30px auto;
-  max-width: 100%;
-}
-
-.product h3, .product h4 {
-  text-align: center;
-  font-weight: 300;
-}
-
-.product .lead {
-  text-align: center;
-}
-
 .no-top {
   margin-top: 0;
 }
@@ -236,12 +143,6 @@ code.inline {
   white-space: normal;
 }
 
-/* Fix problem with bootstrap making prism code blocks wrap */
-.line-numbers {
-  word-break: normal;
-  word-wrap: normal;
-}
-
 .btn-primary {
   background-color: #FEF800;
   color: #333;
@@ -252,102 +153,6 @@ code.inline {
   background-color: #F2ED00;
   border-color: #C7C200;
   color: #333;
-}
-
-.codeblock {
-  position: relative;
-}
-
-.codeblock-container {
-  position: relative;
-}
-
-.codeblock-container[data-type]:before {
-  display: block;
-  content: attr(data-type);
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-align: right;
-  color: #aaa;
-  position: absolute;
-  right: -80px;
-  bottom: 70px;
-  width: 100px;
-  height: 0;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.codeblock pre {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin: 0;
-  border-top-style: none;
-}
-
-.codeblock :first-child pre {
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-}
-
-.codeblock :last-child pre {
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.example-button {
-  position: absolute;
-  z-index: 10;
-  right: 0;
-  top: 0;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -moz-border-top-left-radius: 0;
-  -moz-border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.token {
-  position: relative;
-  z-index: 5;
-}
-
-.line-highlight {
-  margin-top: -1px;
-  left:;
-  width: 400px;
-  display: block;
-  z-index: 1;
-  background: rgba(254, 248, 0, 0.5);
-  background: -moz-linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
-  background: -webkit-linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
-  background: -o-linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
-  background: linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
-}
-
-.line-highlight:before {
-  content: "";
-  display: none;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #f2f2f2;
 }
 
 h1 span {

@@ -1,0 +1,101 @@
+/* Fix problem with bootstrap making prism code blocks wrap */
+.line-numbers {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+.codeblock {
+  position: relative;
+}
+
+.codeblock-container {
+  position: relative;
+}
+
+.codeblock-container[data-type]:before {
+  display: block;
+  content: attr(data-type);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #aaa;
+  position: absolute;
+  right: -80px;
+  bottom: 70px;
+  width: 100px;
+  height: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.codeblock pre {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  border-top-style: none;
+}
+
+.codeblock :first-child pre {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+}
+
+.codeblock :last-child pre {
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.example-button {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-top-left-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.token {
+  position: relative;
+  z-index: 5;
+}
+
+.line-highlight {
+  margin-top: -1px;
+  left:;
+  width: 400px;
+  display: block;
+  z-index: 1;
+  background: rgba(254, 248, 0, 0.5);
+  background: -moz-linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
+  background: -webkit-linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
+  background: -o-linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
+  background: linear-gradient(left, rgba(254, 248, 0, 0), rgba(254, 248, 0, 0.5) 30%, rgba(254, 248, 0, 0));
+}
+
+.line-highlight:before {
+  content: "";
+  display: none;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f2f2f2;
+}

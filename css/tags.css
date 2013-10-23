@@ -1,0 +1,38 @@
+.tag-form > * {
+  float: left;
+  margin-right: 0.3em;
+}
+
+.tag-form > :first-child {
+  margin-left: 60px;
+}
+
+.tag-form .input-group {
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .tag-form {
+    clear: both;
+  }
+}
+
+.tag-form-list {
+  position: absolute;
+  top: 60px;
+  z-index: 1000;
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 4px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.tag-form-list .list-group-item {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.tag-form-list .list-group-item.active, .tag-form-list .list-group-item:hover {
+  background-color: #FEF800;
+}
