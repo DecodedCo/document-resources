@@ -1,0 +1,12 @@
+/* NB this URL loads all the fonts, when a project goes live we need to only reference fonts that are being used */
+@import url(http://assets.decoded.co/din-family.css);
+
+html body {
+	font-family: "DIN Next";
+	font-weight: 400;
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: "DIN Next";
+}
