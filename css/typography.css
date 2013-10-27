@@ -3,10 +3,60 @@
 
 html body {
 	font-family: "DIN Next";
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 16px;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family: "DIN Next";
+}
+
+h2.subtitle {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 200;
+	margin-top: 0em;
+}
+
+dt {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 80%;
+	color: rgb(206,206,206);
+}
+
+.dl-horizontal dt {
+	margin-top: 0em;
+}
+
+span.big-number {
+	font-weight: 200;
+	font-size: 12em;
+}
+
+.jumbotron h1 {
+	font-size: 2.4em;
+	font-weight: 600;
+	line-height: 1.25em;
+	text-align: center;
+}
+
+
+
+.jumbotron h1.brief {
+	font-size: 2.4em;
+	font-weight: 200;
+	font-style: italic;
+	line-height: 1.25em;
+	text-align: left;
+}
+
+@media (min-width: 768px) {
+
+	h2.subtitle + p.lead {
+		background: url(http://o2learn.decoded.co/img-global/yellow-bar.png) no-repeat top left;
+		padding-top: 1.1em;
+		margin-top: 0.2em;
+	}	
 }
