@@ -1,5 +1,5 @@
 /* NB this URL loads all the fonts, when a project goes live we need to only reference fonts that are being used */
-@import url(http://assets.decoded.co/din-family.css);
+@import url(//assets.decoded.co/din-family.css);
 
 html body {
 	font-family: "DIN Next";
@@ -58,5 +58,5 @@ span.big-number {
 		background: url(http://o2learn.decoded.co/img-global/yellow-bar.png) no-repeat top left;
 		padding-top: 1.1em;
 		margin-top: 0.2em;
-	}	
+	}
 }
