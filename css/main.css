@@ -10,7 +10,8 @@ body .container {
   background: #f9f9f9;
   width: 100%;
   max-width: 100%;
-  border-bottom: 1px solid rgba(210,210,210,0.5);  
+  border-bottom: 1px solid rgba(210,210,210,0.5);
+  margin-bottom: 20px;
 }
 
 .lesson-item.row {
@@ -20,7 +21,7 @@ body .container {
 .divider {
   padding-bottom: 1em;
   margin-bottom: 0em;
-  border-bottom: 1px solid rgba(200,200,200,0.4);  
+  border-bottom: 1px solid rgba(200,200,200,0.4);
 }
 
 
