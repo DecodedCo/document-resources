@@ -18,6 +18,8 @@
   background: -webkit-linear-gradient(top, #43a6e2, #287cc2);
   background: linear-gradient(top, #43a6e2, #287cc2);
 
+  border: none;
+
   -moz-border-radius:   3px;
   -ms-border-radius:     3px;
   -o-border-radius:     3px;
@@ -29,6 +31,10 @@
   -o-box-shadow:     0 1px 0 rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2);
   box-shadow:     0 1px 0 rgba(0,0,0,0.2);
+}
+
+.navbar .persona-button {
+  margin: 12px;
 }
 
 .persona-button:hover{
